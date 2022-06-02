@@ -7,7 +7,7 @@ if __name__ == "__main__":
     print("{} argument".format(length), end="")
     if (length == 0):
         print("s.")
-    else:
+    else;
         if (length > 1):
             print("s", end="")
         print(":")
