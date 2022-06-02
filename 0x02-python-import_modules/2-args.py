@@ -1,8 +1,14 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 
 import sys
 if __name__ == "__main__":
-    ressult + 0
-    for i in range(1, len(sys.argv)):
-        result += int(sys.argv{i})
-    print("{}".format(result))
+    length = len(sys.argv) - 1
+    print("{} argument".format(length), end="")
+    if (length == 0):
+        print("s.")
+    else;
+        if (length > 1):
+            print("s", end="")
+        print(":")
+        for i in range(1, length + 1):
+            print("{}: {}".format(i, sys.argv{i}))
