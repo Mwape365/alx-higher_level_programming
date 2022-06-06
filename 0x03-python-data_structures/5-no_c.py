@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    listofchars = list(my_string)
-    for char in listofchars:
-        if char == 'c' or char == 'C':
-            listofchars.remove(char)
-    return("".Join(listofchars))
+    lstr = list(my_string)
+    new_str = ''
+    for i in range(len(lstr)):
+        if lstr[i].upper() == 'C':
+            lstr[i] = ''
+        new_str += lstr[i]
+    return new_str
